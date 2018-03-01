@@ -7,6 +7,7 @@ body{
     font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,Arial,sans-serif,FreeSans,Arimo,NSimSun,FZShuTi,cursive,STXingkai;
 }
 ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
+a{text-decoration:none;}
 .content{
     width: 100%;
     height: auto;
@@ -93,8 +94,13 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     text-align: center;
     font-size: 22px;
 }
-.topUL ul li p {
-    font-weight: 700;
+.topUL ul li button {
+    height: 80px;
+    line-height: 40px;
+    background: none;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
     -ms-transform: scale(1,1);
     -webkit-transform: scale(1,1);
     -moz-transform: scale(1,1);
@@ -276,7 +282,7 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     height: 300px;
     border: none;
     border-radius: 150px;
-    background: url(http://m.qpic.cn/psb?/V11W7bPJ2476NW/zIthLM76ZrLb*nbtX.Gn1A.FYoNn3vAbF1SoYxbwXdM!/b/dGcBAAAAAAAA&bo=AAWoBgAFqAYRBzA!&rf=viewer_4) no-repeat center center;
+    background: url(../img/love.jpg) no-repeat center center;
     background-size: 150% 150%;
     background-position: 100% 50%;
 }
@@ -294,7 +300,8 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     color: lightcoral;
     overflow-x: visible;
 }
-.s2 > div{
+.s2 > button{
+    display: block;
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -373,7 +380,7 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     border: 1px solid hsla(0,0%,100%,.2);
     margin-right: 15px;
 }
-.a-icon{
+.a-icon,.blog-icon{
     display: block;
     width: 100%;
     height: 100%;

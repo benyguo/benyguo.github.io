@@ -1,16 +1,46 @@
-
+/*********************** blog page **********************/
+.blog_head{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 100%;
+    float: left;
+    z-index: 99;
+    background: none;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+.blog_content{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-color: #383734;
+}
+.bg_toHome{
+    width: 100px;
+    height: 100%;
+    border: none;
+    background: none;
+    float: left;
+}
+.toHome{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 15px;
+    background: none;
+}
 .slogan{
     width: 60%;
     height: 100%;
     position: relative;
     background: none;
     float: left;
-    padding-left: 100px;
 }
 .slogan > h2{
     width: 100%;
     height: 70%;
-    line-height: 65px;
+    line-height: 56px;
     color: black;
     text-align: left;
     margin: 0;
@@ -24,4 +54,21 @@
     margin: 0;
     padding: 0;
     text-align: left;
+}
+.artical{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    padding-top: 80px;
+}
+.artical > p{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: 500px;
+    text-align: center;
+    color: lightgray;
+    padding-top: 80px;
 }

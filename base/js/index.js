@@ -21,6 +21,16 @@ function showAlert(msg){
     html += '<div class="tips"><div class="tips-content">'+msg+'</div><button type="button" class="tips-button" onclick="removeAlert();">确定</button></div>';
     $('body').append(html);
 }
+function scrollShowHeader(){
+    var header=$(".header");
+    $(window).scroll(function(){
+        if($(document).scrollTop()>=800){
+            header.addClass("fixedHeader"); 
+        }else{
+            header.removeClass("fixedHeader");
+        }
+    });
+}
 (function(){
     //$('body,html').animate({scrollTop:0},500);
     $('.toTop').click(function(){$('body,html').animate({scrollTop:0},500);});

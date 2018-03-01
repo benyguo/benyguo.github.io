@@ -19,16 +19,16 @@
     <div class="topUL">
         <ul>
             <li>
-                <p id='main'>Main</p>
+                <button type="button" id='main'>Main</button>
             </li>
             <li>
-                <p id='blog'>Blog</p>
+                <button type="button" id='blog'>Blog</button>
             </li>
             <li>
-                <p id='about'>About</p>
+                <button type="button" id='about'>About</button>
             </li>
             <li>
-                <p id='contact'>Contact</p>
+                <button type="button" id='contact'>Contact</button>
             </li>
         </ul>
     </div>
@@ -40,8 +40,8 @@
         <div class="login">
             <div class="users">
                 <ul>
-                    <li>World</li>
-                    <li>Guys</li>
+                    <li>Amy</li>
+                    <li>My Love</li>
                 </ul>
             </div>
             <div class="hello">
@@ -67,7 +67,7 @@
             <li>
                 <div class="getStart">
                     <div class="s2">
-                        <div id="start">Getting start >>></div>
+                        <button id="start">Getting start >>></button>
                     </div>
                 </div>
             </li>
@@ -145,16 +145,7 @@
         horizontalScrolling: false,
         responsive: true
     });
-    $(function(){
-        var header=$(".header");
-        $(window).scroll(function(){
-            if($(document).scrollTop()>=800){
-                header.addClass("fixedHeader"); 
-            }else{
-                header.removeClass("fixedHeader");
-            }
-        });
-    });
+    scrollShowHeader();
     addIconsLink();
 </script>
 
