@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
     background:white;
     overflow-x: hidden;
-    font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,Arial,sans-serif,FreeSans,Arimo,NSimSun,FZShuTi,cursive,STXingkai;
+    font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,FreeSans,Arimo,NSimSun,FZShuTi,cursive,STXingkai,Arial,sans-serif;
 }
 ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
 a{text-decoration:none;}
