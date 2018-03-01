@@ -24,7 +24,8 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     width: 100%;
     float: left;
     background: none;
-    z-index: 99;}
+    z-index: 99;
+}
 .fixedHeader {
     position: fixed;
     background-color: white;
@@ -275,7 +276,9 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     height: 300px;
     border: none;
     border-radius: 150px;
-    background: url(../img/dog.jpeg) no-repeat center center;
+    background: url(http://m.qpic.cn/psb?/V11W7bPJ2476NW/zIthLM76ZrLb*nbtX.Gn1A.FYoNn3vAbF1SoYxbwXdM!/b/dGcBAAAAAAAA&bo=AAWoBgAFqAYRBzA!&rf=viewer_4) no-repeat center center;
+    background-size: 150% 150%;
+    background-position: 100% 50%;
 }
 
 .s1 > div{
@@ -287,8 +290,8 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     background: none;
     font-family: FZShuTi;
     text-align: center;
-    font-size: 50px;
-    color: lightgreen;
+    font-size: 60px;
+    color: lightcoral;
     overflow-x: visible;
 }
 .s2 > div{
@@ -440,7 +443,7 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
 }
 .toTop{
     width: 100px;
-    height: 120px;
+    height: 70px;
     top: 60px;
     left: 49%;
     padding: 0;
@@ -482,11 +485,10 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     top: -10px;
     left: 47px;
 }
-
 .toTop > span{
     display: block;
     position: relative;
-    width: 100px;
+    width: 60px;
     left: 50%;
     -webkit-transform: translateX(-50%) rotate(-90deg);
     -moz-transform: translateX(-50%) rotate(-90deg);
@@ -497,6 +499,10 @@ ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
     line-height: 1;
     text-align: right;
     font-family: inherit;
+}
+.toTop:hover span{
+    color: goldenrod;
+    padding-left: 3px;
 }
 .bottom-info{
     width: 90%;
@@ -518,9 +524,51 @@ span.icons{
     padding-top: 10px;
     z-index: 20;
 }
+span.icons:hover{
+    color: goldenrod;
+}
 .bg_info{
     float: left;
     text-align: left;
     color: #a67f4e;
     font-size: 20px;
+}
+.tips{
+    width: 300px;
+    height: auto;
+    min-height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: lightblue;
+    transform: translate(-50%, -50%); /*向左向上分别平移自身的一半*/  
+    -webkit-transform: translate(-50%, -50%);  
+    -moz-transform: translate(-50%, -50%); 
+    z-index: 999;
+}
+.tips-content{
+    width: 250px;
+    height: auto;
+    min-height: 115px;
+    line-height: 115px;
+    margin: 0 auto;
+    background: none;
+    text-align: center;
+    color: black;
+    padding-top: 5px;
+}
+.tips-button{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    border-top: 1px solid gray;
+    text-align: center;
+    color: black;
+}
+.tips-button:hover{
+    color: red;
 }
