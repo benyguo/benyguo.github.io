@@ -1,4 +1,4 @@
-
+@font-face{font-family:Noticons; src:url(https://wordpress.com/i/noticons/Noticons.woff);}
 html,body{color:#333;}
 body{
     margin: 0 auto;
@@ -7,6 +7,7 @@ body{
     font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,FreeSans,Arimo,NSimSun,FZShuTi,cursive,STXingkai,Arial,sans-serif;
 }
 ul,ol,li{padding: 0; margin: 0; list-style:none; float: left;}
+td{color:red;text-align: center;overflow: visible;position: relative;}
 a{text-decoration:none;}
 .content{
     width: 100%;
@@ -255,8 +256,8 @@ a{text-decoration:none;}
 }
 .firstPic ul{width: 100%; height: 100%;z-index: 3;}
 .firstPic ul li{width: 100%; height: 250px; overflow: hidden;}
-.firstPic ul li:nth-child(2){height: 350px;}
-.firstPic ul li:nth-child(3){height: 100px;}
+.firstPic ul li:nth-child(2){height: 380px;}
+.firstPic ul li:nth-child(3){height: 70px;}
 .firstPic ul li:nth-child(4){height: 100px;}
 #sahua{
     width: 100%;
@@ -267,15 +268,16 @@ a{text-decoration:none;}
     z-index: -1;
 }
 .getStart{
-    height: 200px;
+    height: 100%;
     width: 90%;
     margin: 0 auto;
     padding: 0;
 }
 .s1,.s2{
     width: 80%;
-    height: 250px;
+    height: 100%;
     margin: 0 auto;
+    overflow: visible;
 }
 .s1 > div:first-child{
     width: 300px;
@@ -288,20 +290,22 @@ a{text-decoration:none;}
 }
 
 .s1 > div{
-    width: 600px;
-    height: 50px;
-    line-height: 50px;
+    width: 70%;
+    height: 80px;
+    line-height: 80px;
     margin: 0 auto;
     border: none;
-    background: none;
+    background: url(../img/love_font.png);
+    background-size: 130% 100%;
     font-family: FZShuTi;
     text-align: center;
     font-size: 60px;
     color: lightcoral;
-    overflow-x: visible;
+    overflow: visible;
 }
 .s2 > button{
     display: block;
+    position: relative;
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -314,6 +318,7 @@ a{text-decoration:none;}
     font-size: 18px;
     font-weight: bold;
     color: white;
+    top: 20px;
 }
 .firstContent{
     width: 100%;
@@ -397,9 +402,83 @@ a{text-decoration:none;}
     z-index: 1;
 }
 .shengming{
-    width: 65%;
+    width: 90%;
     height: 200px;
     margin: 0 auto;
+    position: relative;
+}
+.beatHeart{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: -200px;
+    background: none;
+    z-index: 66;
+}
+.heart{
+    width: 25px;
+    height: 20px;
+    position:  relative;
+    top: 30%;
+    left: 44%;
+    -webkit-animation: pound 1s infinite;
+    -ms-animation: pound 1s infinite;
+    -moz-animation: pound 1s infinite;
+    -o-animation: pound 1s infinite;
+    animation: pound 1s infinite;
+}
+.heart:before,.heart:after{
+    position: absolute; 
+    content: ""; 
+    left: 12.5px; 
+    top: 0; 
+    width: 12.5px; 
+    height: 20px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    -webkit-border-radius: 50px 50px 0 0;
+    -ms-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    -o-border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0px; 
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+}
+@keyframes pound {
+    from { transform: none; }
+    30% { transform: scale(1.2);}
+    50% { transform: scale(1.6);}
+    70% { transform: scale(1.2); }
+    to { transform: none;}
+}
+.xiangai{
+    width: 90%;
+    height: 50%;
+    padding-top: 50px;
+    background: url(../img/xiangai.png) center no-repeat;
+    background-position: 50% 100%;
+    margin: 0 auto;
+    float: none;
 }
 .shengming > b{
     display: block;
