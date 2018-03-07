@@ -2,7 +2,8 @@ function gotoBlog(){
     stopShowWelcome();
     //$('.header').removeClass("fixedHeader");
     //$('.content').removeClass("downContent");
-    $('body').load('./pages/blog_main.html');
+    //$('body').load('./pages/blog_main.html');
+    window.location.href = './hexo/public/index.html';
 }
 function loadContent(url){
     stopShowWelcome();
