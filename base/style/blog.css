@@ -98,6 +98,11 @@
     float: left;
 }
 /* 显示全文  start */
+.art-main{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 .contentBox>h2,.contentBox>time,.contentBox>p{
     display: block;
     margin: 0 auto;
@@ -209,7 +214,7 @@
 }
 .article-box{
     width: 100%;
-    height: 200px;
+    height: 250px;
     position: relative;
     border-left: 1px solid lightgray;
     background: white;
@@ -219,7 +224,7 @@
 .article-box:before{
     content: "";
     width: 3px;
-    height: 50px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
@@ -277,8 +282,8 @@
 .content-bottom{
     width: 90%;
     height: 19%;
+    margin-left: 2%;
     position: relative;
-    overflow: hidden;
 }
 .content-bottom>a{
     display: block;
@@ -300,4 +305,13 @@
 .content-bottom>a:hover{
     color: lightcoral;
     border-color: lightcoral;
+}
+.content-bottom:before{
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+    /*background-color: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));*/
 }
