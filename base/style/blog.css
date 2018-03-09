@@ -7,7 +7,7 @@
     width: 100%;
     float: left;
     z-index: 99;
-    background: none;
+    background-color: #383734;
     border-bottom: 1px solid hsla(0,0%,100%,.2);
 }
 .blog_content{
@@ -63,7 +63,8 @@
     width: 100%;
     height: 100%;
     position: relative;
-    padding-top: 80px;
+    top: 80px;
+    background-color: white;
 }
 .artical > p{
     width: 100%;
@@ -77,39 +78,226 @@
 }
 
 .navigationBox{
-    width: 18%;
-    height: 500px;
+    width: 24%;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
     background: none;
     border: none;
     padding: 0;
-    float: left;
 }
 .contentBox{
-    width: 59%;
-    height: auto;
-    min-height: 500px;
-    margin-left: 20px;
-    background: none;
-    border: none;
-    padding: 0;
-    float: left;
-}
-.navigationBar{
     width: 70%;
     height: 100%;
     position: relative;
-    margin-top: 50px;
-    border-left: 1px dotted gray;
-    border-right: 1px dotted gray;
-    float: right;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 28%;
+    float: left;
 }
-.navigationBar>ul{
+/* 显示全文  start */
+.contentBox>h2,.contentBox>time,.contentBox>p{
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.contentBox>p{
+    text-align: left;
+    word-spacing: .1em;
+    letter-spacing: .1em;
+    text-indent:25px;
+    font-size: 18px;
+    line-height: 30px;
+}
+/* 显示全文  end  */
+
+.nb1{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #a67f4e;
+    border: none;
+    opacity: .4;
+}
+.navigationBar{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 0;
+    background-color: white;
+    border: none;
+}
+.navigationBar:before{
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    border: 3px solid white;
+    border-radius: 75px;
+    background: url(../img/dog.jpeg) center no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: translate(-50%, 0%);  
+    -moz-transform: translate(-50%, 0%); 
+    transform: translate(-50%, 0%); /*向左平移自身的一半*/  
+}
+.navigationBar>h3{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    padding-top: 80px;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    border: none;
+}
+.navigationBar>p{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: gray;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.nb-bar{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+.nb-bar>ul{
     width: 100%;
     height: 100%;
-    background-color: gray;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
-.navigationBar>ul>li{
+.nb-bar>ul>li{
+    width: 50%;
+    height: 10%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    float: none;
+}
+.nb-bar>ul>li:last-child{
+    height: 60%;
+}
+.a-link{
+    display: block;
+    position: relative;
     width: 100%;
+    height: 100%;
+    line-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: gray;
+}
+.a-link:hover{
+    color: blue;
+}
+.article-box{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-left: 1px solid lightgray;
+    background: white;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.article-box:before{
+    content: "";
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5B5941;
+}
+/*
+.art-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    padding: 0;
+    background: url(../img/dog.jpeg) center no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+*/
+.content-container{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    margin-left: 2%;
+    border: none;
+    overflow: hidden;
+}
+.content-container > h2{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+.content-container > time{
+    display: block;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.content-container > p{
+    display: inline-block;
+    width: 100%;
+    height: 69%;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 18px;
+    word-spacing: .1em;
+    letter-spacing: .1em;
+    overflow:hidden; 
+}
+.content-bottom{
+    width: 90%;
+    height: 19%;
+    position: relative;
+    overflow: hidden;
+}
+.content-bottom>a{
+    display: block;
+    width: 100px;
     height: 30px;
-    border-bottom: 1px solid #383734;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #87B6A7;
+    border-radius: 10px;
+    background: none;
+    text-align: center;
+    color: #87B6A7;
+    float: right;
+}
+.content-bottom>a:hover{
+    color: lightcoral;
+    border-color: lightcoral;
 }

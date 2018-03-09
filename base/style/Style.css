@@ -1,4 +1,4 @@
-@font-face{font-family:Noticons; src:url(https://wordpress.com/i/noticons/Noticons.woff);}
+/*@font-face{font-family:Noticons; src:url(https://wordpress.com/i/noticons/Noticons.woff);}*/
 /*
 *, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -677,9 +677,9 @@ span.icons:hover{
     border: 1px solid gray;
     border-radius: 10px;
     background-color: lightblue;
-    transform: translate(-50%, -50%); /*向左向上分别平移自身的一半*/  
     -webkit-transform: translate(-50%, -50%);  
     -moz-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); /*向左向上分别平移自身的一半*/  
     z-index: 999;
 }
 .tips-content{
