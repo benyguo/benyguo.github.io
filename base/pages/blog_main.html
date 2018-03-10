@@ -61,6 +61,7 @@
         </div>
         <div class="contentBox">
         </div>
+        <div class="hidden-box"></div>
     </div>
 </div>
 <script type="text/javascript" src="js/config/article_config.js"></script>
@@ -69,14 +70,16 @@
     $('.artical').height(window.innerHeight-80);
     for (var idx = article_config.max_article_num; idx >= 1; idx--){
         var html  = '<article class="article-box">';
-            html += '<div class="content-container">';
+            html += '<div id="art-'+idx+'" class="content-container">';
             html += '</div>';
             html += '<div class="content-bottom">';
             html += '<a href="javascript:void();" onclick="showFullText('+idx+')">阅读全文</a>';
             html += '</div>';
             html += '</article>';
-        $('.contentBox').html(html);
-        $('.content-container').load('pages/articles/article-'+idx+'.html');
+        $('.hidden-box').html(html);
+        var article = $('.article-box');
+        $('.contentBox').append(article);
+        $('#art-'+idx).load('pages/articles/article-'+idx+'.html');
     }
     function showFullText(num){
         //$('.contentBox').load('pages/article_main.html');

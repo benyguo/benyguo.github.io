@@ -1,0 +1,453 @@
+
+  <style type="text/css"  class="link">
+  /*# sourceURL=madoko.css */
+  
+  .madoko .toc>.tocblock .tocblock .tocblock {
+    margin-left: 2.25em;
+  }
+  .madoko .toc>.tocblock .tocblock {
+    margin-left: 1.5em;
+  }
+  .madoko .toc-contents>.tocblock>.tocitem {
+    font-weight: bold;
+  }
+  .madoko .toc {
+    margin-top: 1em;
+  }
+  .madoko p.para-continue {
+    margin-bottom: 0pt;
+  }
+  .madoko .para-block+p {
+    margin-top: 0pt;
+  }
+  .madoko ul.para-block, .madoko ol.para-block {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+  }
+  .madoko ul.para-end, .madoko ol.para-end {
+    margin-bottom: 1em;
+  }
+  .madoko dl {
+    margin-left: 0em;
+  }
+  .madoko blockquote {
+    font-style: italic;
+  }
+  .madoko a.localref {
+    text-decoration: none;
+  }
+  .madoko a.localref:hover {
+    text-decoration: underline;
+  }
+  .madoko .footnotes {
+    font-size: smaller;
+    margin-top: 2em;
+  }
+  .madoko .footnotes hr {
+    width: 50%;
+    text-align: left;
+  }
+  .madoko .footnote { 
+    margin-left: 1em;
+  }
+  .madoko .footnote-before {
+    margin-left: -1em;
+    width: 1em;
+    display: inline-block;
+  }
+  .madoko .align-center, .madoko .align-center>p {
+    text-align: center !important;
+  }
+  .madoko .align-center pre {
+    text-align: left;
+  }
+  .madoko .align-center>* {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .madoko .align-left, .madoko .align-left>p {
+    text-align: left !important;
+  }
+  .madoko .align-left>* {
+    margin-left: 0pt !important;
+    margin-right: auto !important;
+  }
+  .madoko .align-right, .madoko .align-right>p {
+    text-align: right !important;
+  }
+  .madoko .align-right>* {
+    margin-left: auto !important;
+    margin-right: 0pt !important;
+  }
+  .madoko .align-center>table,
+  .madoko .align-left>table,
+  .madoko .align-right>table {
+    text-align: left !important;
+  }
+  .madoko .equation-before {
+    float: right;
+  }
+  .madoko .bibitem {
+    font-size: smaller;
+  }
+  .madoko .bibsearch {
+    font-size: x-small;
+    text-decoration:none;
+    color: black;
+    font-family: "Segoe UI Symbol", Symbola, serif;
+  }
+  .madoko .block, .madoko .figure, .madoko .bibitem, .madoko .equation, .madoko div.math {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
+  .madoko .figure {
+    padding: 0.5em;
+    margin-left: 0pt;
+    margin-right: 0pt;
+  }
+  .madoko .hidden {
+    display: none;
+  }
+  .madoko .invisible {
+    visibility: hidden;
+  }
+  .madoko.preview .invisible {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  .madoko code.code, .madoko span.code {
+    white-space: pre-wrap;
+  }
+  .madoko hr, hr.madoko {
+    border: none;
+    border-bottom: black solid 1px;
+    margin-bottom: 0.5ex;
+  }
+  .madoko .framed>*:first-child {
+    margin-top: 0pt;
+  }
+  .madoko .framed>*:last-child {
+    margin-bottom: 0pt;
+  }
+  .madoko ul.list-style-type-dash {
+      list-style-type: none !important;
+  }
+  .madoko ul.list-style-type-dash > li:before {
+      content: "\2013"; 
+      position: absolute;
+      margin-left: -1em; 
+  }
+  .madoko table.madoko {
+    border-collapse: collapse;
+  }
+  .madoko td, .madoko th {
+    padding: 0ex 0.5ex;
+    margin: 0pt;
+    vertical-align: top;
+  }
+  .madoko .cell-border-left {
+    border-left: 1px solid black;
+  }
+  .madoko .cell-border-right {
+    border-right: 1px solid black;
+  }
+  .madoko thead>tr:first-child>.cell-line,
+  .madoko tbody:first-child>tr:first-child>.cell-line {
+    border-top: 1px solid black;
+    border-bottom: none;
+  }
+  .madoko .cell-line, .madoko .cell-double-line {
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+  .madoko .cell-double-line {
+    border-top: 1px solid black;
+    padding-top: 1.5px !important;
+  }
+  .madoko .input-mathpre .MathJax_Display {
+    text-align: left !important;
+  }
+  .madoko div.input-mathpre {
+    text-align: left;
+    margin-top: 1.5ex;
+    margin-bottom: 1ex;
+  }
+  .madoko .math-rendering {
+    text-align: left;
+    white-space: pre;
+    color: gray;
+  }
+  .madoko .mathdisplay {
+    text-align: center;
+  }
+  .madoko .pretty table {
+    border-collapse: collapse;
+  }
+  .madoko .pretty td {
+    padding: 0em;
+  }
+  .madoko .pretty td.empty {
+    min-width: 1.5ex;
+  }
+  .madoko .pretty td.expander {
+    width: 100em;
+  }
+  body.madoko, .madoko .serif {
+    font-family: Cambria,"Times New Roman","Liberation Serif","Times",serif;
+  }
+  .madoko .sans-serif {
+    font-family: "Calibri", "Optima", sans-serif;
+  }
+  .madoko .symbol {
+    font-family: "Segoe UI Symbol", Symbola, serif;
+  }
+  body.madoko {  
+    -webkit-text-size-adjust: 100%;       
+    text-rendering: optimizeLegibility;
+  }
+  body.madoko {
+    max-width: 88ex; 
+    margin: 1em auto;
+    padding: 0em 2em;  
+  }
+  body.preview.madoko {
+    padding: 0em 1em;
+  }
+  .madoko p {
+    text-align: justify;
+  }
+  .madoko h1, .madoko h2, .madoko h3, .madoko h4 { 
+    margin-top: 1.22em; 
+    margin-bottom: 1ex;
+  }
+  .madoko h1+p, .madoko h2+p, .madoko h3+p, .madoko h4+p, .madoko h5+p  { 
+    margin-top: 1ex;    
+  }
+  .madoko h5, .madoko h6 { 
+    margin-top: 1ex;
+    font-size: 1em;
+  }
+  .madoko h5 { 
+    margin-bottom: 0.5ex;
+  }
+  .madoko h5 + p {
+    margin-top: 0.5ex;
+  }
+  .madoko h6 { 
+    margin-bottom: 0pt;
+  }
+  .madoko h6 + p {
+    margin-top: 0pt;
+  }
+  .madoko pre, .madoko code, .madoko kbd, .madoko samp, .madoko tt, 
+  .madoko .monospace, .madoko .token-indent, .madoko .reveal pre, .madoko .reveal code, .madoko .email {
+    font-family: Consolas,"Andale Mono WT","Andale Mono",Lucida Console,Monaco,monospace,monospace;
+    font-size: 0.85em;
+  }
+  .madoko pre code, .madoko .token-indent {
+    font-size: 0.95em;
+  }
+  .madoko pre code {
+    font-family: inherit !important;
+  }
+  .madoko ol.linenums li {
+    background-color: white;
+    list-style-type: decimal;
+  }
+  .madoko .remote {
+    background-color: #F0FFF0;
+  }
+  .madoko .remote + * {
+    margin-top: 0pt;
+  }
+  @media print {
+    body.madoko {
+      font-size: 10pt;
+    }
+    @page {
+      margin: 1in 1.5in;
+    }
+  }
+  @media only screen and (max-device-width:1024px) {
+    body.madoko {
+      padding: 0em 0.5em;    
+    }
+    .madoko li {
+      text-align: left;
+    }
+  }
+  
+    </style>
+
+
+<div class="body madoko" style="line-adjust:0"><h2 id="sec--cmd-markdown-" class="h1" data-heading-depth="1" style="display:block"><span class="heading-before"><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" data-linkid="1" class="heading-label">1</a>.&#8194;</span>欢迎使用 Cmd Markdown 编辑阅读器</h2>
+<hr  class="madoko" style="display:block">
+
+<p class="p noindent">我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong class="strong-star2">Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：
+</p>
+<blockquote>
+
+<ul class="ul list-star compact">
+<li class="li ul-li list-star-li compact-li">整理知识，学习笔记
+</li>
+<li class="li ul-li list-star-li compact-li">发布日记，杂文，所见所想
+</li>
+<li class="li ul-li list-star-li compact-li">撰写发布技术文稿（代码支持）
+</li>
+<li class="li ul-li list-star-li compact-li">撰写发布学术论文（LaTeX 公式支持）
+</li></ul></blockquote>
+<p class="p noindent"><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo" data-path="https://www.zybuluo.com/static/img/logo.png">
+</p>
+<p class="p indent">除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：
+</p><h4 id="sec-windowsmaclinux-https-wwwzybuluocomcmd" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.0.1</span>.&#8194;</span><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a></h4>
+<blockquote>
+
+<p class="p noindent">请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong class="strong-star2">新文稿</strong> 或者使用快捷键 <code class="code code1">Ctrl+Alt+N</code>。
+</p></blockquote>
+<hr  class="madoko" style="display:block">
+<h3 id="sec--markdown" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.1</span>.&#8194;</span>什么是 Markdown</h3>
+<p class="p noindent">Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong class="strong-star2">粗体</strong> 或者 <em class="em-star1">斜体</em> 某些文字，更棒的是，它还可以
+</p><h4 id="sec-1-todo-https-wwwzybuluocommdeditorurlhttps-wwwzybuluocomstaticeditormd-helpmarkdown13--todo-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.1</span>.&#8194;</span>1. 制作一份待办事宜&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表">Todo 列表</a></h4>
+<ul class="ul list-dash compact">
+<li class="li ul-li list-dash-li compact-li">[ ] 支持以 PDF 格式导出文稿
+</li>
+<li class="li ul-li list-dash-li compact-li">[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
+</li>
+<li class="li ul-li list-dash-li compact-li">[x] 新增 Todo 列表功能
+</li>
+<li class="li ul-li list-dash-li compact-li">[x] 修复 LaTex 公式渲染问题
+</li>
+<li class="li ul-li list-dash-li compact-li">[x] 新增 LaTex 公式编号功能
+</li></ul>
+<h4 id="sec-2-latex" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.2</span>.&#8194;</span>2. 书写一个质能守恒公式<sup id="back-fn-latex" ><a href="#fn-latex" title="1.支持 LaTeX 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问&nbsp;MathJax 参考更多使用方法。
+&#8617;" class="footnote-ref localref" ><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" data-linkid="1" class="footnote-label">1</a></a></sup></h4>
+<p class="p noindent">$<svg  class="math-inline math-render-svg math" style="vertical-align:-0.0210em;height:0.9192em;width:4.1106em" viewBox='88.468 53.39 39.149 8.754' ><desc>$E=mc^2$</desc><g id='math-826676'><use x='88.667' xlink:href='#g0-69' y='61.836'/><use x='99.363' xlink:href='#g2-61' y='61.836'/><use x='109.88' xlink:href='#g0-109' y='61.836'/><use x='118.627' xlink:href='#g0-99' y='61.836'/><use x='122.938' xlink:href='#g3-50' y='58.22'/></g></svg>$
+</p><h4 id="sec-3-code" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.3</span>.&#8194;</span>3. 高亮一段代码<sup id="back-fn-code" ><a href="#fn-code" title="2.代码高亮功能支持包括 Java, Python, JavaScript 在内的，四十一种主流编程语言。
+&#8617;" class="footnote-ref localref" ><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" data-linkid="2" class="footnote-label">2</a></a></sup></h4>
+<pre class="para-block pre-fenced pre-fenced3 language-python lang-python python colorized" style="display:block"><code>@requires_authorization
+<span style="color:blue">class</span> <span style="color:navy">SomeClass</span><span style="color:blue">:</span>
+    <span style="color:blue">pass</span>
+
+<span style="color:blue">if</span> __name__ == <span style="color:maroon">&#39;</span><span style="color:maroon">__main__</span><span style="color:maroon">&#39;</span><span style="color:blue">:</span>
+    <span style="color:darkgreen"># A comment</span>
+    <span style="color:blue">print</span> <span style="color:maroon">&#39;</span><span style="color:maroon">hello world</span><span style="color:maroon">&#39;</span></code></pre><h4 id="sec-4-https-wwwzybuluocommdeditorurlhttps-wwwzybuluocomstaticeditormd-helpmarkdown7-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.4</span>.&#8194;</span>4. 高效绘制&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图">流程图</a></h4>
+<pre class="para-block pre-fenced pre-fenced3 language-flow lang-flow flow" style="display:block"><code>st=&gt;start: Start
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op</code></pre><h4 id="sec-5-https-wwwzybuluocommdeditorurlhttps-wwwzybuluocomstaticeditormd-helpmarkdown8-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.5</span>.&#8194;</span>5. 高效绘制&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图">序列图</a></h4>
+<pre class="para-block pre-fenced pre-fenced3 language-seq lang-seq seq" style="display:block"><code>Alice-&gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&gt;Alice: I am good thanks!</code></pre><h4 id="sec-6-https-wwwzybuluocommdeditorurlhttps-wwwzybuluocomstaticeditormd-helpmarkdown9-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.6</span>.&#8194;</span>6. 高效绘制&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图">甘特图</a></h4>
+<pre class="para-block pre-fenced pre-fenced3 language-gantt lang-gantt gantt" style="display:block"><code>    title 项目开发流程
+    section 项目确定
+        需求分析       :a1, 2016-06-22, 3d
+        可行性报告     :after a1, 5d
+        概念验证       : 5d
+    section 项目实施
+        概要设计      :2016-07-05  , 5d
+        详细设计      :2016-07-08, 10d
+        编码          :2016-07-15, 10d
+        测试          :2016-07-22, 5d
+    section 发布验收
+        发布: 2d
+        验收: 3d</code></pre><h4 id="sec-7-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.7</span>.&#8194;</span>7. 绘制表格</h4><table class="madoko block">
+<thead><tr><th class="col thead tr-odd tr-last tr-first col-odd col-first" data-row="1" data-col="1" style="font-weight:bold"> 项目        </th><th class="col thead tr-odd tr-last tr-first col-even" data-row="1" data-col="2" style="font-weight:bold;text-align:right"> 价格   </th><th class="col thead tr-odd tr-last tr-first col-odd col-last" data-row="1" data-col="3" style="font-weight:bold;text-align:center">  数量  </th></tr></thead>
+<tbody><tr><td class="tbody tr-even col cell-line col-odd col-first" data-row="0" data-col="1"></td><td class="tbody tr-even col cell-line col-even" data-row="0" data-col="2" style="text-align:right"></td><td class="tbody tr-even col cell-line col-odd col-last" data-row="0" data-col="3" style="text-align:center"></td></tr>
+<tr><td class="tbody tr-odd tr-first col col-odd col-first" data-row="1" data-col="1"> 计算机     </td><td class="tbody tr-odd tr-first col col-even" data-row="1" data-col="2" style="text-align:right"> $1600 </td><td class="tbody tr-odd tr-first col col-odd col-last" data-row="1" data-col="3" style="text-align:center">   5     </td></tr>
+<tr><td class="tbody tr-even col col-odd col-first" data-row="2" data-col="1"> 手机        </td><td class="tbody tr-even col col-even" data-row="2" data-col="2" style="text-align:right">   $12   </td><td class="tbody tr-even col col-odd col-last" data-row="2" data-col="3" style="text-align:center">   12   </td></tr>
+<tr><td class="tbody tr-odd tr-last col col-odd col-first" data-row="3" data-col="1"> 管线        </td><td class="tbody tr-odd tr-last col col-even" data-row="3" data-col="2" style="text-align:right">    $1    </td><td class="tbody tr-odd tr-last col col-odd col-last" data-row="3" data-col="3" style="text-align:center">  234  </td></tr></tbody></table><h4 id="sec-8-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.1.8</span>.&#8194;</span>8. 更详细语法说明</h4>
+<p class="p noindent">想要查看更详细的语法说明，可以参考我们准备的&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" data-linkid="1">Cmd Markdown 简明语法手册</a>，进阶用户可以参考&nbsp;<a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" data-linkid="2">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。
+</p>
+<p class="p indent">总而言之，不同于其它 <em class="em-star1">所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong class="strong-star2">Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。
+</p>
+<hr  class="madoko" style="display:block">
+<h3 id="sec--cmd-markdown" class="h2" data-heading-depth="2" style="display:block"><span class="heading-before"><span class="heading-label">1.2</span>.&#8194;</span>什么是 Cmd Markdown</h3>
+<p class="p noindent">您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong class="strong-star2">编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。
+</p><h4 id="sec-1-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.1</span>.&#8194;</span>1. 实时同步预览</h4>
+<p class="p noindent">我们将 Cmd Markdown 的主界面一分为二，左边为<strong class="strong-star2">编辑区</strong>，右边为<strong class="strong-star2">预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！
+</p><h4 id="sec-2-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.2</span>.&#8194;</span>2. 编辑工具栏</h4>
+<p class="p noindent">也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong class="strong-star2">编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。
+</p>
+<p class="p indent"><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor" data-path="https://www.zybuluo.com/static/img/toolbar-editor.png">
+</p><h4 id="sec-3-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.3</span>.&#8194;</span>3. 编辑模式</h4>
+<p class="p noindent">完全心无旁骛的方式编辑文字：点击 <strong class="strong-star2">编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code class="code code1">Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！
+</p><h4 id="sec-4-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.4</span>.&#8194;</span>4. 实时的云端文稿</h4>
+<p class="p noindent">为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong class="strong-star2">编辑工具栏</strong> 的最右侧提示 <code class="code code1">已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。
+</p><h4 id="sec-5-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.5</span>.&#8194;</span>5. 离线模式</h4>
+<p class="p noindent">在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。
+</p><h4 id="sec-6-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.6</span>.&#8194;</span>6. 管理工具栏</h4>
+<p class="p noindent">为了便于管理您的文稿，在 <strong class="strong-star2">预览区</strong> 的顶部放置了如下所示的 <strong class="strong-star2">管理工具栏</strong>：
+</p>
+<p class="p indent"><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager" data-path="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
+</p>
+<p class="p indent">通过管理工具栏可以：
+</p>
+<p class="p indent"><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享
+<i class="icon-file"></i> 新建：开始撰写一篇新的文稿
+<i class="icon-trash"></i> 删除：删除当前的文稿
+<i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
+<i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作
+<i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式
+</p><h4 id="sec-7-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.7</span>.&#8194;</span>7. 阅读工具栏</h4>
+<p class="p noindent"><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager" data-path="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
+</p>
+<p class="p indent">通过 <strong class="strong-star2">预览区</strong> 右上角的 <strong class="strong-star2">阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。
+</p>
+<p class="p indent">工具栏上的五个图标依次为：
+</p>
+<p class="p indent"><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
+<i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置
+<i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong class="strong-star2">黑色主题</strong>，超炫！
+<i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验
+<i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境
+</p><h4 id="sec-8-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.8</span>.&#8194;</span>8. 阅读模式</h4>
+<p class="p noindent">在 <strong class="strong-star2">阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code class="code code1">Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。
+</p><h4 id="sec-9-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.9</span>.&#8194;</span>9. 标签、分类和搜索</h4>
+<p class="p noindent">在编辑区任意行首位置输入以下格式的文字可以标签当前文档：
+</p>
+<p class="p indent">标签： 未分类
+</p>
+<p class="p indent">标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：
+</p>
+<p class="p indent"><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list" data-path="https://www.zybuluo.com/static/img/file-list.png">
+</p><h4 id="sec-10-" class="h3" data-heading-depth="3" style="display:block"><span class="heading-before"><span class="heading-label">1.2.10</span>.&#8194;</span>10. 文稿发布和分享</h4>
+<p class="p noindent">在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！
+</p>
+<hr  class="madoko" style="display:block">
+
+<p class="p noindent">再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！
+</p>
+<p class="p indent">作者&nbsp;<a href="http://weibo.com/ghosert" data-linkid="3">@ghosert</a>   <br>
+2016 年 07月 07日    
+</p><span data-line=""></span>
+<div class="footnotes madoko">
+<hr >
+
+<div id="fn-latex" class="footnote" style="line-adjust:0">
+<p class="p noindent"><span class="footnote-before"><sup><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" data-linkid="1" class="footnote-label">1</a>.</sup></span>支持 <strong class="strong-star2">LaTeX</strong> 编辑显示支持，例如：<svg  class="math-inline math-render-svg math" style="vertical-align:-0.3503em;height:1.2119em;width:5.5479em" viewBox='34.67 53.552 52.837 11.542' ><desc>$\sum_{i=1}^n a_i=0$</desc><g id='math-8c3e49'><use x='34.869' xlink:href='#g4-80' y='54.364'/><use x='45.385' xlink:href='#g1-110' y='56.827'/><use x='45.385' xlink:href='#g1-105' y='64.824'/><use x='48.204' xlink:href='#g3-61' y='64.824'/><use x='54.32' xlink:href='#g3-49' y='64.824'/><use x='60.45' xlink:href='#g0-97' y='61.836'/><use x='65.716' xlink:href='#g1-105' y='63.33'/><use x='71.8' xlink:href='#g2-61' y='61.836'/><use x='82.316' xlink:href='#g2-48' y='61.836'/></g></svg>， 访问&nbsp;<a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" data-linkid="4">MathJax</a> 参考更多使用方法。
+<a href="#back-fn-latex" class="footnote-backref localref">&#8617;</a></p></div>
+<div id="fn-code" class="footnote" style="line-adjust:0">
+<p class="p noindent"><span class="footnote-before"><sup><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" data-linkid="2" class="footnote-label">2</a>.</sup></span>代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong class="strong-star2">四十一</strong>种主流编程语言。
+<a href="#back-fn-code" class="footnote-backref localref">&#8617;</a></p></div></div></div>
+<svg id='math-svg-paths' style='display:none' version='1.1' viewBox='0 0 0 0' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+<defs>
+<path d='M3.716 -3.766C3.537 -4.134 3.248 -4.403 2.8 -4.403C1.634 -4.403 0.399 -2.939 0.399 -1.484C0.399 -0.548 0.946 0.11 1.724 0.11C1.923 0.11 2.421 0.07 3.019 -0.638C3.098 -0.219 3.447 0.11 3.925 0.11C4.274 0.11 4.503 -0.12 4.663 -0.438C4.832 -0.797 4.961 -1.405 4.961 -1.425C4.961 -1.524 4.872 -1.524 4.842 -1.524C4.742 -1.524 4.732 -1.484 4.702 -1.345C4.533 -0.697 4.354 -0.11 3.945 -0.11C3.676 -0.11 3.646 -0.369 3.646 -0.568C3.646 -0.787 3.666 -0.867 3.776 -1.305C3.885 -1.724 3.905 -1.823 3.995 -2.202L4.354 -3.597C4.423 -3.875 4.423 -3.895 4.423 -3.935C4.423 -4.105 4.304 -4.204 4.134 -4.204C3.895 -4.204 3.746 -3.985 3.716 -3.766ZM3.068 -1.186C3.019 -1.006 3.019 -0.986 2.869 -0.817C2.431 -0.269 2.022 -0.11 1.743 -0.11C1.245 -0.11 1.106 -0.658 1.106 -1.046C1.106 -1.544 1.425 -2.77 1.654 -3.228C1.963 -3.816 2.411 -4.184 2.809 -4.184C3.457 -4.184 3.597 -3.367 3.597 -3.308S3.577 -3.188 3.567 -3.138L3.068 -1.186Z' id='g0-97'/>
+<path d='M2.26 -4.359C2.26 -4.47 2.176 -4.624 1.981 -4.624C1.792 -4.624 1.59 -4.442 1.59 -4.24C1.59 -4.122 1.681 -3.975 1.869 -3.975C2.071 -3.975 2.26 -4.17 2.26 -4.359ZM0.837 -0.816C0.809 -0.725 0.774 -0.642 0.774 -0.523C0.774 -0.195 1.053 0.07 1.437 0.07C2.134 0.07 2.441 -0.893 2.441 -0.997C2.441 -1.088 2.35 -1.088 2.329 -1.088C2.232 -1.088 2.225 -1.046 2.197 -0.969C2.036 -0.411 1.73 -0.126 1.458 -0.126C1.318 -0.126 1.283 -0.216 1.283 -0.37C1.283 -0.53 1.332 -0.663 1.395 -0.816C1.465 -1.004 1.541 -1.193 1.618 -1.374C1.681 -1.541 1.932 -2.176 1.96 -2.26C1.981 -2.329 2.001 -2.413 2.001 -2.483C2.001 -2.81 1.723 -3.075 1.339 -3.075C0.649 -3.075 0.328 -2.127 0.328 -2.008C0.328 -1.918 0.425 -1.918 0.446 -1.918C0.544 -1.918 0.551 -1.953 0.572 -2.029C0.753 -2.629 1.06 -2.88 1.318 -2.88C1.43 -2.88 1.492 -2.824 1.492 -2.636C1.492 -2.476 1.451 -2.371 1.276 -1.939L0.837 -0.816Z' id='g1-105'/>
+<path d='M0.851 -0.439C0.823 -0.349 0.781 -0.174 0.781 -0.153C0.781 0 0.907 0.07 1.018 0.07C1.144 0.07 1.255 -0.021 1.29 -0.084S1.381 -0.37 1.416 -0.516C1.451 -0.649 1.527 -0.969 1.569 -1.144C1.611 -1.297 1.653 -1.451 1.688 -1.611C1.764 -1.897 1.778 -1.953 1.981 -2.239C2.176 -2.518 2.504 -2.88 3.027 -2.88C3.431 -2.88 3.438 -2.525 3.438 -2.392C3.438 -1.974 3.138 -1.2 3.027 -0.907C2.95 -0.711 2.922 -0.649 2.922 -0.53C2.922 -0.16 3.229 0.07 3.585 0.07C4.282 0.07 4.589 -0.893 4.589 -0.997C4.589 -1.088 4.498 -1.088 4.477 -1.088C4.38 -1.088 4.373 -1.046 4.345 -0.969C4.184 -0.411 3.884 -0.126 3.605 -0.126C3.459 -0.126 3.431 -0.223 3.431 -0.37C3.431 -0.53 3.466 -0.621 3.592 -0.934C3.675 -1.151 3.961 -1.89 3.961 -2.28C3.961 -2.957 3.424 -3.075 3.055 -3.075C2.476 -3.075 2.085 -2.72 1.876 -2.441C1.827 -2.922 1.416 -3.075 1.13 -3.075C0.83 -3.075 0.669 -2.859 0.579 -2.699C0.425 -2.441 0.328 -2.043 0.328 -2.008C0.328 -1.918 0.425 -1.918 0.446 -1.918C0.544 -1.918 0.551 -1.939 0.6 -2.127C0.704 -2.538 0.837 -2.88 1.109 -2.88C1.29 -2.88 1.339 -2.727 1.339 -2.538C1.339 -2.406 1.276 -2.148 1.227 -1.96S1.109 -1.485 1.074 -1.332L0.851 -0.439Z' id='g1-110'/>
+<path d='M2.336 -4.435C2.336 -4.624 2.322 -4.631 2.127 -4.631C1.681 -4.191 1.046 -4.184 0.76 -4.184V-3.933C0.928 -3.933 1.388 -3.933 1.771 -4.129V-0.572C1.771 -0.342 1.771 -0.251 1.074 -0.251H0.809V0C0.934 -0.007 1.792 -0.028 2.05 -0.028C2.267 -0.028 3.145 -0.007 3.299 0V-0.251H3.034C2.336 -0.251 2.336 -0.342 2.336 -0.572V-4.435Z' id='g3-49'/>
+<path d='M5.356 -2.343C5.461 -2.343 5.621 -2.343 5.621 -2.518C5.621 -2.685 5.454 -2.685 5.363 -2.685H0.746C0.656 -2.685 0.488 -2.685 0.488 -2.518C0.488 -2.343 0.649 -2.343 0.753 -2.343H5.356ZM5.363 -0.809C5.454 -0.809 5.621 -0.809 5.621 -0.976C5.621 -1.151 5.461 -1.151 5.356 -1.151H0.753C0.649 -1.151 0.488 -1.151 0.488 -0.976C0.488 -0.809 0.656 -0.809 0.746 -0.809H5.363Z' id='g3-61'/>
+<path d='M4.583 -3.188C4.583 -3.985 4.533 -4.782 4.184 -5.519C3.726 -6.476 2.909 -6.635 2.491 -6.635C1.893 -6.635 1.166 -6.376 0.757 -5.45C0.438 -4.762 0.389 -3.985 0.389 -3.188C0.389 -2.441 0.428 -1.544 0.837 -0.787C1.265 0.02 1.993 0.219 2.481 0.219C3.019 0.219 3.776 0.01 4.214 -0.936C4.533 -1.624 4.583 -2.401 4.583 -3.188ZM2.481 0C2.092 0 1.504 -0.249 1.325 -1.205C1.215 -1.803 1.215 -2.72 1.215 -3.308C1.215 -3.945 1.215 -4.603 1.295 -5.141C1.484 -6.326 2.232 -6.416 2.481 -6.416C2.809 -6.416 3.467 -6.237 3.656 -5.25C3.756 -4.692 3.756 -3.935 3.756 -3.308C3.756 -2.56 3.756 -1.883 3.646 -1.245C3.497 -0.299 2.929 0 2.481 0Z' id='g2-48'/>
+<path d='M6.844 -3.258C6.994 -3.258 7.183 -3.258 7.183 -3.457S6.994 -3.656 6.854 -3.656H0.887C0.747 -3.656 0.558 -3.656 0.558 -3.457S0.747 -3.258 0.897 -3.258H6.844ZM6.854 -1.325C6.994 -1.325 7.183 -1.325 7.183 -1.524S6.994 -1.724 6.844 -1.724H0.897C0.747 -1.724 0.558 -1.724 0.558 -1.524S0.747 -1.325 0.887 -1.325H6.854Z' id='g2-61'/>
+<path d='M4.194 5.32L0.658 9.694C0.578 9.793 0.568 9.813 0.568 9.853C0.568 9.963 0.658 9.963 0.837 9.963H9.096L9.953 7.482H9.704C9.455 8.229 8.787 8.837 7.94 9.126C7.781 9.176 7.093 9.415 5.629 9.415H1.395L4.852 5.141C4.922 5.051 4.941 5.021 4.941 4.981S4.932 4.932 4.872 4.842L1.634 0.399H5.579C6.715 0.399 9.006 0.468 9.704 2.331H9.953L9.096 0H0.837C0.568 0 0.558 0.01 0.558 0.319L4.194 5.32Z' id='g4-80'/>
+<path d='M7.054 -2.321C7.073 -2.371 7.103 -2.441 7.103 -2.461C7.103 -2.471 7.103 -2.57 6.984 -2.57C6.894 -2.57 6.874 -2.511 6.854 -2.451C6.207 -0.976 5.838 -0.309 4.134 -0.309H2.68C2.54 -0.309 2.521 -0.309 2.461 -0.319C2.361 -0.329 2.331 -0.339 2.331 -0.418C2.331 -0.448 2.331 -0.468 2.381 -0.648L3.059 -3.367H4.045C4.892 -3.367 4.892 -3.158 4.892 -2.909C4.892 -2.839 4.892 -2.72 4.822 -2.421C4.802 -2.371 4.792 -2.341 4.792 -2.311C4.792 -2.262 4.832 -2.202 4.922 -2.202C5.001 -2.202 5.031 -2.252 5.071 -2.401L5.639 -4.732C5.639 -4.792 5.589 -4.842 5.519 -4.842C5.43 -4.842 5.41 -4.782 5.38 -4.663C5.171 -3.905 4.991 -3.676 4.075 -3.676H3.138L3.736 -6.077C3.826 -6.426 3.836 -6.466 4.274 -6.466H5.679C6.894 -6.466 7.193 -6.177 7.193 -5.36C7.193 -5.121 7.193 -5.101 7.153 -4.832C7.153 -4.772 7.143 -4.702 7.143 -4.653S7.173 -4.533 7.263 -4.533C7.372 -4.533 7.382 -4.593 7.402 -4.782L7.601 -6.506C7.631 -6.775 7.582 -6.775 7.333 -6.775H2.301C2.102 -6.775 2.002 -6.775 2.002 -6.575C2.002 -6.466 2.092 -6.466 2.281 -6.466C2.65 -6.466 2.929 -6.466 2.929 -6.286C2.929 -6.247 2.929 -6.227 2.879 -6.047L1.564 -0.777C1.465 -0.389 1.445 -0.309 0.658 -0.309C0.488 -0.309 0.379 -0.309 0.379 -0.12C0.379 0 0.468 0 0.658 0H5.828C6.057 0 6.067 -0.01 6.137 -0.169L7.054 -2.321Z' id='g0-69'/>
+<path d='M3.945 -3.786C3.786 -3.786 3.646 -3.786 3.507 -3.646C3.347 -3.497 3.328 -3.328 3.328 -3.258C3.328 -3.019 3.507 -2.909 3.696 -2.909C3.985 -2.909 4.254 -3.148 4.254 -3.547C4.254 -4.035 3.786 -4.403 3.078 -4.403C1.733 -4.403 0.408 -2.979 0.408 -1.574C0.408 -0.677 0.986 0.11 2.022 0.11C3.447 0.11 4.284 -0.946 4.284 -1.066C4.284 -1.126 4.224 -1.196 4.164 -1.196C4.115 -1.196 4.095 -1.176 4.035 -1.096C3.248 -0.11 2.162 -0.11 2.042 -0.11C1.415 -0.11 1.146 -0.598 1.146 -1.196C1.146 -1.604 1.345 -2.57 1.684 -3.188C1.993 -3.756 2.54 -4.184 3.088 -4.184C3.427 -4.184 3.806 -4.055 3.945 -3.786Z' id='g0-99'/>
+<path d='M0.877 -0.588C0.847 -0.438 0.787 -0.209 0.787 -0.159C0.787 0.02 0.927 0.11 1.076 0.11C1.196 0.11 1.375 0.03 1.445 -0.169C1.455 -0.189 1.574 -0.658 1.634 -0.907L1.853 -1.803C1.913 -2.022 1.973 -2.242 2.022 -2.471C2.062 -2.64 2.142 -2.929 2.152 -2.969C2.301 -3.278 2.829 -4.184 3.776 -4.184C4.224 -4.184 4.314 -3.816 4.314 -3.487C4.314 -3.238 4.244 -2.959 4.164 -2.66L3.885 -1.504L3.686 -0.747C3.646 -0.548 3.557 -0.209 3.557 -0.159C3.557 0.02 3.696 0.11 3.846 0.11C4.154 0.11 4.214 -0.139 4.294 -0.458C4.433 -1.016 4.802 -2.471 4.892 -2.859C4.922 -2.989 5.45 -4.184 6.535 -4.184C6.964 -4.184 7.073 -3.846 7.073 -3.487C7.073 -2.919 6.655 -1.783 6.456 -1.255C6.366 -1.016 6.326 -0.907 6.326 -0.707C6.326 -0.239 6.675 0.11 7.143 0.11C8.08 0.11 8.448 -1.345 8.448 -1.425C8.448 -1.524 8.359 -1.524 8.329 -1.524C8.229 -1.524 8.229 -1.494 8.179 -1.345C8.03 -0.817 7.711 -0.11 7.163 -0.11C6.994 -0.11 6.924 -0.209 6.924 -0.438C6.924 -0.687 7.014 -0.927 7.103 -1.146C7.293 -1.664 7.711 -2.77 7.711 -3.337C7.711 -3.985 7.313 -4.403 6.565 -4.403S5.31 -3.965 4.941 -3.437C4.932 -3.567 4.902 -3.905 4.623 -4.144C4.374 -4.354 4.055 -4.403 3.806 -4.403C2.909 -4.403 2.421 -3.766 2.252 -3.537C2.202 -4.105 1.783 -4.403 1.335 -4.403C0.877 -4.403 0.687 -4.015 0.598 -3.836C0.418 -3.487 0.289 -2.899 0.289 -2.869C0.289 -2.77 0.389 -2.77 0.408 -2.77C0.508 -2.77 0.518 -2.78 0.578 -2.999C0.747 -3.706 0.946 -4.184 1.305 -4.184C1.465 -4.184 1.614 -4.105 1.614 -3.726C1.614 -3.517 1.584 -3.407 1.455 -2.889L0.877 -0.588Z' id='g0-109'/>
+<path d='M3.522 -1.269H3.285C3.264 -1.116 3.194 -0.704 3.103 -0.635C3.048 -0.593 2.511 -0.593 2.413 -0.593H1.13C1.862 -1.241 2.106 -1.437 2.525 -1.764C3.041 -2.176 3.522 -2.608 3.522 -3.271C3.522 -4.115 2.783 -4.631 1.89 -4.631C1.025 -4.631 0.439 -4.024 0.439 -3.382C0.439 -3.027 0.739 -2.992 0.809 -2.992C0.976 -2.992 1.179 -3.11 1.179 -3.361C1.179 -3.487 1.13 -3.731 0.767 -3.731C0.983 -4.226 1.458 -4.38 1.785 -4.38C2.483 -4.38 2.845 -3.836 2.845 -3.271C2.845 -2.664 2.413 -2.183 2.19 -1.932L0.509 -0.272C0.439 -0.209 0.439 -0.195 0.439 0H3.313L3.522 -1.269Z' id='g3-50'/>
+</defs>
+</svg>
+
+

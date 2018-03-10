@@ -214,11 +214,11 @@
 }
 .article-box{
     width: 100%;
-    height: 250px;
+    height: 300px;
     position: relative;
     border-left: 1px solid lightgray;
     background: white;
-    margin-top: 20px;
+    margin-top: 35px;
     overflow: hidden;
 }
 .article-box:before{
@@ -314,4 +314,11 @@
     top: -50px;
     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
     /*background-color: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));*/
+}
+
+.hidden-box{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: none;
 }
