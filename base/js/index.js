@@ -2,8 +2,8 @@ function gotoBlog(){
     stopShowWelcome();
     //$('.header').removeClass("fixedHeader");
     //$('.content').removeClass("downContent");
-    $('body').load('./pages/blog_main.html');
-    //window.location.href = 'http://benyguo.github.io/blog/index.html';
+    //$('body').load('./pages/blog_main.html');
+    window.location.href = 'http://benyguo.github.io/blog/';
 }
 function loadContent(url){
     stopShowWelcome();
