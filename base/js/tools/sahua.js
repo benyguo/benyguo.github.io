@@ -738,7 +738,7 @@ function setViewports() {
     rtfunc('wHalfRT1', renderSpec.halfWidth, renderSpec.halfHeight);
 }
 
-function render() {
+function sahua_render() {
     renderScene();
 }
 
@@ -762,7 +762,7 @@ function animate() {
     timeInfo.prev = curdate;
     
     if(animating) requestAnimationFrame(animate);
-    render();
+    sahua_render();
 }
 
 function makeCanvasFullScreen(canvas) {

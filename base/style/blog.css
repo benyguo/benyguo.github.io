@@ -88,19 +88,20 @@
     padding: 0;
 }
 .contentBox{
-    width: 70%;
+    width: 73%;
     height: 100%;
     position: relative;
     background: none;
     border: none;
     padding: 0;
-    margin-left: 28%;
+    margin-left: 26%;
     float: left;
 }
 /* 显示全文  start */
 .art-main{
     width: 100%;
     height: auto;
+    min-height: 500px;
     position: relative;
 }
 .contentBox>h2,.contentBox>time,.contentBox>p{
@@ -214,7 +215,7 @@
 }
 .article-box{
     width: 100%;
-    height: 300px;
+    height: 400px;
     position: relative;
     border-left: 1px solid lightgray;
     background: white;
@@ -224,7 +225,7 @@
 .article-box:before{
     content: "";
     width: 3px;
-    height: 60px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
@@ -285,7 +286,7 @@
     margin-left: 2%;
     position: relative;
 }
-.content-bottom>a{
+.content-bottom>button{
     display: block;
     width: 100px;
     height: 30px;
@@ -302,7 +303,7 @@
     color: #87B6A7;
     float: right;
 }
-.content-bottom>a:hover{
+.content-bottom>button:hover{
     color: lightcoral;
     border-color: lightcoral;
 }
@@ -315,7 +316,14 @@
     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
     /*background-color: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));*/
 }
-
+.content-iframe,content-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
 .hidden-box{
     width: 100%;
     height: 100px;

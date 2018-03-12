@@ -3,7 +3,7 @@ function gotoBlog(){
     //$('.header').removeClass("fixedHeader");
     //$('.content').removeClass("downContent");
     $('body').load('./pages/blog_main.html');
-    //window.location.href = './hexo/public/index.html';
+    //window.location.href = 'http://benyguo.github.io/blog/index.html';
 }
 function loadContent(url){
     stopShowWelcome();

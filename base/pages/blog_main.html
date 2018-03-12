@@ -21,7 +21,7 @@
         <div class="navigationBox">
             <div class="nb1"></div>
             <div class="navigationBar">
-                <h3>AAAAAMY</h3>
+                <h3>Beny</h3>
                 <p>人活着是为了什么？</p>
                 <div class="nb-bar">
                     <ul>
@@ -60,34 +60,54 @@
             </div>
         </div>
         <div class="contentBox">
+            <div class="content-content"></div>
         </div>
         <div class="hidden-box"></div>
     </div>
 </div>
 <script type="text/javascript" src="js/config/article_config.js"></script>
+<link rel="stylesheet" type="text/css" href="style/default.css"/>
+<script type="text/javascript" src="js/api/gitment.browser.js"></script>
 <script type="text/javascript">
     $('.blog_content').height(window.innerHeight);
     $('.artical').height(window.innerHeight-80);
-    for (var idx = article_config.max_article_num; idx >= 1; idx--){
+    for (var idx = article_config.max_article_num; idx >= 2; idx--){
         var html  = '<article class="article-box">';
             html += '<div id="art-'+idx+'" class="content-container">';
             html += '</div>';
             html += '<div class="content-bottom">';
-            html += '<a href="javascript:void();" onclick="showFullText('+idx+')">阅读全文</a>';
+            html += '<button onclick="showFullText('+idx+');">阅读全文</button>';
             html += '</div>';
             html += '</article>';
         $('.hidden-box').html(html);
         var article = $('.article-box');
-        $('.contentBox').append(article);
+        $('.content-content').append(article);
         $('#art-'+idx).load('pages/articles/article-'+idx+'.html');
     }
+    var loadArticle = false,loadComment = false;
     function showFullText(num){
-        //$('.contentBox').load('pages/article_main.html');
-        //$('art-main').load('pages/articles/article-'+num+'.html');
-        $('.contentBox').load('pages/articles/article-'+num+'.html');
+        $('.content-content').attr('src','pages/articles/article-'+num+'.html');
+        
+        loadArticle = true;
+        loadComment = false;
+        $('.content-content').load('pages/articles/article-'+num+'.html');
+        $(window).scroll(function(){
+            if (!loadArticle || loadComment) {return;}
+        　　var scrollTop = $(this).scrollTop();
+        　　var scrollHeight = $(document).height();
+        　　var windowHeight = $(this).height();
+        　　if(scrollTop + windowHeight == scrollHeight){
+                var param = {id: "article-comment-"+num,owner: "benyguo", repo: "benyguo.github.io", oauth: {client_id: "e683ddac015be0618603", client_secret: "11432ac15d1a0efbab8428e96e8ff4085fe33739"}};
+                var gitment = new Gitment(param);
+                $('.content-content').append(gitment.render());
+                loadComment = true;
+        　　}
+        });
     }
     function backBlogHome(){
+        loadArticle = false;
         $('body').load('./pages/blog_main.html');
     }
     addIconsLink();
+    
 </script>
