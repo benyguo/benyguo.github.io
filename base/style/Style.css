@@ -447,7 +447,7 @@ a{text-decoration:none;}
     z-index: 1;
 }
 .shengming{
-    width: 90%;
+    width: 100%;
     height: 200px;
     margin: 0 auto;
     position: relative;
@@ -517,7 +517,7 @@ a{text-decoration:none;}
     to { transform: none;}
 }
 .xiangai{
-    width: 90%;
+    width: 100%;
     height: 50%;
     padding-top: 50px;
     background: url(../img/xiangai.png) center no-repeat;
