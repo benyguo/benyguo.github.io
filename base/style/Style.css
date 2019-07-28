@@ -325,9 +325,9 @@ a{text-decoration:none;}
     height: 300px;
     border: none;
     border-radius: 150px;
-    background: url(../img/love.jpg) no-repeat center center;
-    background-size: 150% 150%;
-    background-position: 100% 50%;
+    background: url(../img/panda.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    background-position: 0 0;
 }
 
 .s1 > div{
@@ -336,7 +336,7 @@ a{text-decoration:none;}
     line-height: 80px;
     margin: 0 auto;
     border: none;
-    background: url(../img/love_font.png);
+    /*background: url(../img/love_font.png);*/
     background-size: 130% 100%;
     font-family: FZShuTi;
     text-align: center;
